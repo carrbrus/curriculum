@@ -21,7 +21,7 @@ h1 {
   text-transform: uppercase;
 }
 
-/* Estilos generales opcionales (migrados del <style> original) */
+/* Estilos generales */
 body {
   margin: 40px;
   background-color: #f4f4f4;
@@ -30,7 +30,17 @@ body {
 }
 
 section {
-  margin-bottom: 25px;
+  margin-top: 4px;
+  margin-right: 2px;
+  margin-left: 2px;
+  margin-bottom: 1.2rem; /* margen inferior con 1.2 veces el tamaño raíz */
+  
+  border: 0.2pt solid #cedddd;
+  
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  padding-right: 0.8%;
+  padding-left: 0.8%;
 }
 
 ul {
@@ -40,4 +50,19 @@ ul {
 strong {
   color: #000;
 }
+
+/* <p> descendiente de <footer>: alinear texto a la derecha y en itálica */
+footer p {
+  text-align: right;
+  font-style: italic;
+}
+
+/* <ul> hija inmediata de <nav>: eliminar viñetas */
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
 
