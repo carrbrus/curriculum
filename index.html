@@ -1,71 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="keywords" content="curriculum, hoja de vida, diseñador gráfico, CV, habilidades, experiencia">
-  <meta name="description" content="Currículum vitae profesional de Carlos Ronquillo, enfocado en diseño gráfico, habilidades técnicas y proyectos creativos.">
-  <meta name="author" content="Carlos Ronquillo">
-  <link rel="stylesheet" href="./stylesheets/style.css">
-  <title>Currículum de Carlos Ronquillo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carlos Ronquillo - CV</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9d5b6a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <header>
+    <div class="container header-content">
+      <img src="me.jpg" alt="Foto de perfil" class="profile-img">
+      <h1>Carlos Ronquillo</h1>
+      <p>Estudiante de Ingeniería en Ciencias Computacionales</p>
+    </div>
+  </header>
 
-  <h1>Carlos Ronquillo</h1>
-
-  <!-- Imagen agregada con ID photo -->
-  <img id="photo" src="ruta/de/tu/imagen.jpg" alt="Foto de Carlos Ronquillo">
-
-  <section>
-    <h2 class="subtitle">Información de Contacto</h2>
-    <p>Email: <a href="carrbrus@espol.edu.ec">carrbus@espol.edu.ec</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/carlosandresronquillo/" target="_blank">linkedin.com/in/carlosandresronquillo</a></p>
-  </section>
-
-  <section>
-    <h2 class="subtitle">Resumen</h2>
-    <p>
-      Estudiante de ingeniería en computación. Busco aplicar mis habilidades en un entorno dinámico e innovador.
-    </p>
-  </section>
-
-  <section>
-    <h2 class="subtitle">Habilidades</h2>
-    <ul>
-      <li><strong>Habilidades duras:</strong> Python (básico), Java (básico), Netbeans, HTML</li>
-      <li><strong>Habilidades blandas:</strong> Creatividad, comunicación efectiva, gestión del tiempo, trabajo en equipo</li>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="#perfil">Perfil</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#educacion">Educación</a></li>
+      <li><a href="#contacto">Contacto</a></li>
     </ul>
-  </section>
+  </nav>
 
-  <section>
-    <h2 class="subtitle">Educación</h2>
-    <p><strong>Ingeniería en computación</strong> — Escuela Superior Politécnica del Litoral</p>
-  </section>
+  <main class="container">
+    <section id="perfil">
+      <h2><i class="fas fa-user"></i> Perfil</h2>
+      <p>Soy Carlos Ronquillo, estudiante de Ingeniería en Ciencias Computacionales con interés en desarrollo de software, diseño web, y tecnologías emergentes. Me apasiona aprender nuevas herramientas tecnológicas y aplicar mis conocimientos para resolver problemas del mundo real.</p>
+    </section>
 
-  <section>
-    <h2 class="subtitle">Premios y Reconocimientos</h2>
-    <ul>
-      <li>Tetracampeón provincial del Guayas</li>
-      <li>Tercer lugar nacional de ajedrez 2009 - Ecuador/Babahoyo</li>
-      <li>Campeón intercolegial de ajedrez en Nueva York, categoría U9</li>
-    </ul>
-  </section>
+    <section id="habilidades">
+      <h2><i class="fas fa-code"></i> Habilidades</h2>
+      <ul class="skills">
+        <li>HTML5, CSS3, JavaScript</li>
+        <li>Git y GitHub</li>
+        <li>Python, C++, Java</li>
+        <li>Responsive Design</li>
+        <li>Desarrollo Web Front-End</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2 class="subtitle">Proyectos</h2>
-    <ul>
-      <li><strong>Portafolio web personal:</strong> Diseño y desarrollo de sitio web responsivo para mostrar trabajos.</li>
-    </ul>
-  </section>
+    <section id="experiencia">
+      <h2><i class="fas fa-briefcase"></i> Experiencia</h2>
+      <p>Aún no cuento con experiencia profesional formal, pero he desarrollado diversos proyectos académicos y personales relacionados con páginas web, algoritmos y estructuras de datos.</p>
+    </section>
 
-  <section>
-    <h2 class="subtitle">Referencias</h2>
-    <ul>
-      <!-- Puedes agregar referencias aquí -->
-    </ul>
-  </section>
+    <section id="educacion">
+      <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
+      <p><strong>Escuela Superior Politécnica del Litoral (ESPOL)</strong></p>
+      <p>Ingeniería en Ciencias Computacionales<br />2022 - Presente</p>
+    </section>
 
+    <section id="contacto">
+      <h2><i class="fas fa-envelope"></i> Contacto</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Carlos Ronquillo. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
+
 
 
 
