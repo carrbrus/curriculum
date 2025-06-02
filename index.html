@@ -5,75 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Carlos Ronquillo - Portafolio</title>
   <link rel="stylesheet" href="./stylesheets/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>Carlos Ronquillo</h1>
-      <p>Estudiante de Ingeniería en Ciencias Computacionales</p>
-      <p>Escuela Superior Politécnica del Litoral</p>
-    </div>
+    <nav>
+      <h1 class="logo">Carlos Ronquillo</h1>
+      <ul>
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#educacion">Educación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Hola, soy <span>Carlos Ronquillo</span></h2>
+      <p>$ {Estudiante de Ciencias Computacionales}</p>
+      <p class="descripcion">
+        Soy estudiante en la Escuela Superior Politécnica del Litoral (ESPOL), apasionado por el desarrollo de software, estructuras de datos y diseño de aplicaciones web.
+        Me encanta aprender nuevas herramientas y construir soluciones eficientes y creativas.
+      </p>
+      <a class="btn" href="#contacto">Contáctame</a>
+    </div>
+    <div class="hero-img">
+      <img src="mi_foto.jpg" alt="Carlos Ronquillo">
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <h3>💻 Habilidades</h3>
     <ul>
-      <li><a href="#perfil">Perfil</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#educacion">Educación</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Python, SQL, Git</li>
+      <li>Diseño web responsivo</li>
+      <li>Control de versiones (GitHub)</li>
     </ul>
-  </nav>
+  </section>
 
-  <main class="container">
-    <section id="perfil">
-      <h2><i class="fas fa-user-circle"></i> Perfil</h2>
-      <p>Soy un estudiante apasionado por la tecnología, con interés en el desarrollo de software, estructuras de datos y diseño de aplicaciones web. Me gusta aprender nuevas herramientas y construir soluciones eficientes y creativas.</p>
-    </section>
+  <section id="educacion">
+    <h3>🎓 Educación</h3>
+    <p><strong>Escuela Superior Politécnica del Litoral (ESPOL)</strong></p>
+    <p>Ingeniería en Ciencias Computacionales - En curso</p>
+  </section>
 
-    <section id="habilidades">
-      <h2><i class="fas fa-tools"></i> Habilidades</h2>
-      <ul class="skills-grid">
-        <li><i class="fab fa-html5"></i> HTML</li>
-        <li><i class="fab fa-css3-alt"></i> CSS</li>
-        <li><i class="fab fa-js-square"></i> JavaScript</li>
-        <li><i class="fas fa-database"></i> SQL</li>
-        <li><i class="fab fa-python"></i> Python</li>
-        <li><i class="fab fa-git-alt"></i> Git</li>
-      </ul>
-    </section>
-
-    <section id="educacion">
-      <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
-      <p><strong>Escuela Superior Politécnica del Litoral (ESPOL)</strong></p>
-      <p>Ingeniería en Ciencias Computacionales - En curso</p>
-    </section>
-
-    <section id="contacto">
-      <h2><i class="fas fa-envelope"></i> Contacto</h2>
-      <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required />
-
-        <label for="email">Correo:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
+  <section id="contacto">
+    <h3>📬 Contáctame</h3>
+    <form>
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Correo" required />
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Carlos Ronquillo. Todos los derechos reservados.</p>
+    <p>© 2025 Carlos Ronquillo. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
+
 
 
 
