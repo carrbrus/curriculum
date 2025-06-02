@@ -3,27 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carlos Ronquillo - CV</title>
+  <title>Carlos Ronquillo - Portafolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2d9d5b6a0.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <div class="container header-content">
-      <img src="me.jpg" alt="Foto de perfil" class="profile-img">
+    <div class="container">
       <h1>Carlos Ronquillo</h1>
       <p>Estudiante de Ingeniería en Ciencias Computacionales</p>
+      <p>Escuela Superior Politécnica del Litoral</p>
     </div>
   </header>
 
   <nav>
-    <ul class="nav-menu">
+    <ul>
       <li><a href="#perfil">Perfil</a></li>
       <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#experiencia">Experiencia</a></li>
       <li><a href="#educacion">Educación</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
@@ -31,40 +30,36 @@
 
   <main class="container">
     <section id="perfil">
-      <h2><i class="fas fa-user"></i> Perfil</h2>
-      <p>Soy Carlos Ronquillo, estudiante de Ingeniería en Ciencias Computacionales con interés en desarrollo de software, diseño web, y tecnologías emergentes. Me apasiona aprender nuevas herramientas tecnológicas y aplicar mis conocimientos para resolver problemas del mundo real.</p>
+      <h2><i class="fas fa-user-circle"></i> Perfil</h2>
+      <p>Soy un estudiante apasionado por la tecnología, con interés en el desarrollo de software, estructuras de datos y diseño de aplicaciones web. Me gusta aprender nuevas herramientas y construir soluciones eficientes y creativas.</p>
     </section>
 
     <section id="habilidades">
-      <h2><i class="fas fa-code"></i> Habilidades</h2>
-      <ul class="skills">
-        <li>HTML5, CSS3, JavaScript</li>
-        <li>Git y GitHub</li>
-        <li>Python, C++, Java</li>
-        <li>Responsive Design</li>
-        <li>Desarrollo Web Front-End</li>
+      <h2><i class="fas fa-tools"></i> Habilidades</h2>
+      <ul class="skills-grid">
+        <li><i class="fab fa-html5"></i> HTML</li>
+        <li><i class="fab fa-css3-alt"></i> CSS</li>
+        <li><i class="fab fa-js-square"></i> JavaScript</li>
+        <li><i class="fas fa-database"></i> SQL</li>
+        <li><i class="fab fa-python"></i> Python</li>
+        <li><i class="fab fa-git-alt"></i> Git</li>
       </ul>
-    </section>
-
-    <section id="experiencia">
-      <h2><i class="fas fa-briefcase"></i> Experiencia</h2>
-      <p>Aún no cuento con experiencia profesional formal, pero he desarrollado diversos proyectos académicos y personales relacionados con páginas web, algoritmos y estructuras de datos.</p>
     </section>
 
     <section id="educacion">
       <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
       <p><strong>Escuela Superior Politécnica del Litoral (ESPOL)</strong></p>
-      <p>Ingeniería en Ciencias Computacionales<br />2022 - Presente</p>
+      <p>Ingeniería en Ciencias Computacionales - En curso</p>
     </section>
 
     <section id="contacto">
       <h2><i class="fas fa-envelope"></i> Contacto</h2>
-      <form action="#" method="post">
+      <form>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <input type="text" id="nombre" name="nombre" required />
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" required />
 
         <label for="mensaje">Mensaje:</label>
         <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
@@ -79,6 +74,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
